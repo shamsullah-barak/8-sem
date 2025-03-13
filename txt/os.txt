@@ -1,0 +1,21 @@
+const os = require("os");
+
+os.availableParallelism()
+os.arch()
+os.cpus()
+os.freemem()
+os.freemem()
+os.getPriority
+os.homedir()
+os.hostname()
+os.machine()
+os.networkInterfaces()
+os.platform()
+os.release()
+os.setPriority([pid]
+os.tmpdir()
+os.totalmem()
+os.type()
+os.uptime()
+os.userInfo()
+os.version()
