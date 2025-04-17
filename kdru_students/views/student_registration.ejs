@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="/css/registration.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        class="form"
+        id="registrationForm"
+        method="post"
+        enctype="application/x-www-form-urlencoded"
+        action="/students/registration"
+      >
+        <h2>Student Registration</h2>
+
+        <div class="form-group">
+          <label for="studentName">Full Name</label>
+          <input type="text" id="studentName" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="studentId">Student ID</label>
+          <input type="text" id="studentId" name="studentId" required />
+        </div>
+
+        <div class="form-group">
+          <label for="faculty">Faculty</label>
+          <select id="faculty" name="faculty" required>
+            <option value="">Select Faculty</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Education">Education</option>
+            <option value="Economics">Economics</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="email">University Email</label>
+          <input type="text" id="email" name="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
